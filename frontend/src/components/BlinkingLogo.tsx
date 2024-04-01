@@ -4,6 +4,7 @@ export const BlinkingLogo=()=>{
     const [color,setcolor]=useState("black");
     useEffect(()=>{
         const intervalId=setInterval(()=>{
+            // @ts-ignore
                 setcolor((e)=>{
         
                     return e = (color=="black" ? "white" : "black");

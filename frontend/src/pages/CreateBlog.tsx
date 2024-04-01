@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { EditorState, ContentState } from 'draft-js';
 import {convertToHTML} from 'draft-convert';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import './CreateBlog.css'
 import { Navbar } from '../components/Navbar';
-import axios from 'axios';
-import { Backend_Api } from '../config';
+
 
 
 export const CreateBlog = () => {
   const [editorState, setEditorState] = useState(
     () => EditorState.createEmpty(),
   );
-
+// @ts-ignore
   const [title, setTitle] = useState("");
 
   const postMaker = async () => {

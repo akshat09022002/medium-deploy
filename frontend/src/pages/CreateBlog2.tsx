@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Editor } from "@tinymce/tinymce-react";
 import { Navbar } from '../components/Navbar';
 import axios from 'axios';
@@ -64,9 +64,9 @@ export const CreateBlog2 = () => {
                             toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image table | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
                             tinycomments_mode: 'embedded',
                             tinycomments_author: 'Author name',
-                            ai_request: (request: any, respondWith: any) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
                         }}
                         initialValue=""
+                        // @ts-ignore
                         onEditorChange={(content: any, editor: any) => {
                             setcontent(content);
                         }}
