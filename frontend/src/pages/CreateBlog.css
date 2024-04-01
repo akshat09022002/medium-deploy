@@ -1,0 +1,20 @@
+.wrapper-class {
+    padding: 1rem;
+    /* border: 1px solid #ccc; */
+  }
+.editor-class {
+    background-color: #def2f1;
+    padding: 1rem;
+    margin-top: 30px;
+    border-left: 2px solid #94a3b8;
+    max-height: 500px;
+  }
+.toolbar-class {
+    border: 1px solid #d6dce4;
+    background-color: #94a3b8;
+  }
+
+.public-DraftEditorPlaceholder-root {
+    color: #9ca3af; /* Placeholder text color */
+    font-size: 26px; /* Placeholder text font size */
+  }

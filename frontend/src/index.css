@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 4px;
+    scroll-margin-right: 30px;    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(23,37,42,0.1);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #def2f1;
+  }
+
+  .border-opacity {
+    border-left: 1px solid rgba(23, 37, 42); /* Adjust the alpha value for the desired opacity */
+  }
